@@ -25,7 +25,7 @@
 	<body>
     <div class="w-full">
   <div class="eantialiased bg-gray-100 ">
-  <div class="fixed z-50 navbar w-full text-gray-700 bg-white">
+  <div data-aos="fade-down" data-aos-duration="1000" class="fixed z-50 navbar w-full text-gray-700 bg-white">
     <div x-data="{ open: true }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
       <div data-aos="fade-right" data-aos-duration="1000" class="flex flex-row items-center justify-between p-4">
         <a href="#" class="relative right-8 text-lg flex flex-row items-center font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"><svg class="floating-image-container" xmlns="http://www.w3.org/2000/svg" version="1.0" width="60pt" 
@@ -91,6 +91,7 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
 <style>
   html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -512,7 +513,7 @@ img {
   line-height: normal;
 }
 }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 500px) {
     .btn:before {
       content: "";
       position: absolute;
@@ -534,7 +535,6 @@ img {
     flex-direction: column;
     justify-content: center;
     left: 0;
-    right: 0;
   }
 
   .heading-div {
