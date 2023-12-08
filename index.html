@@ -96,7 +96,13 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
           <img class="rounded-t-lg" src="assets/bitrailer.avif" width="101.2%" alt="Bitrailer">
           <div class="p-5">
             <h5 class="text-gray-900 font-bold md:text-2xl tracking-tight mb-2">Website Trailer Movie</h5>
-            <p class="md:font-normal text-sm text-gray-700 mb-3 dark:text-gray-400">Website bertemakan trailer movie yang responsive dan elegant, memiliki beberapa fitur yaitu: fitur trending movies, Top Rating, Trending Tv, Search dan masih banyak lagi untuk melihat lebih detail klik disini.</p>
+    <p id="movie-description" class="md:font-normal text-sm text-gray-700 mb-3 dark:text-gray-400">
+    Website bertemakan trailer movie yang responsive dan elegant, memiliki beberapa fitur yaitu: fitur trending movies, Top Rating,
+      <span id="extra-description" class="hidden">
+      Trending Tv, Search dan masih banyak lagi untuk melihat lebih detail klik disini.
+      </span>
+      <a id="read-more-link" class="text-blue-600 underline cursor-pointer" onclick="toggleDescription()">Selengkapnya...</a>
+    </p>
             <a target="_blank" href="https://bitrailer.netlify.app">
                   <button class="btn-klik flex">
                     Klik Disini
@@ -111,7 +117,11 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
             <img class="rounded-t-lg" src="assets/tekateki.avif" width="101.2%" alt="Bitrailer">
             <div class="p-5">
               <h5 class="text-gray-900 font-bold md:text-2xl tracking-tight mb-2">Website Game Teka-Teki</h5>
-              <p class="md:font-normal md:text-md text-sm text-gray-700 mb-3 dark:text-gray-400">Website bertemakan game teka-teki yang responsif dengan menggunakan barcode untuk pengguna handphone, untuk melihat lebih detail klik disini.</p>
+              <p id="tekateki-description" class="md:font-normal md:text-md text-sm text-gray-700 mb-3 dark:text-gray-400">Website bertemakan game teka-teki yang responsif dengan menggunakan barcode untuk pengguna handphone serta 
+
+                <span id="extra-tekateki-description" class="hidden">tampilan ketika jawaban selesai, untuk melihat lebih hasilnya klik disini.</span>
+                <a id="read-more-link-teka-teki" class="text-blue-600 underline cursor-pointer" onclick="toggleDescriptionTekaTeki()">Selengkapnya...</a>
+              </p>
                 <a target="_blank" href="https://rubrik-majalah-game.netlify.app">
                   <button class="btn-klik flex">
                     Klik Disini
@@ -122,36 +132,6 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
         </div>
       </div>
   </div>
-      <!-- <div class="rounded-xl border border-black">
-        <img src="assets/bitrailer.avif" width="22%">
-        <div
-        class="w-96 h-64 duration-500 group overflow-hidden relative rounded bg-neutral-800 text-neutral-50 p-4 flex flex-col justify-evenly"
-        >
-  <div
-  class="absolute blur duration-500 group-hover:blur-none w-72 h-72 rounded-full group-hover:translate-x-12 group-hover:translate-y-12 bg-sky-900 right-1 -bottom-24"
-  ></div>
-  <div
-  class="absolute blur duration-500 group-hover:blur-none w-12 h-12 rounded-full group-hover:translate-x-12 group-hover:translate-y-2 bg-indigo-700 right-12 bottom-12"
-  ></div>
-  <div
-  class="absolute blur duration-500 group-hover:blur-none w-36 h-36 rounded-full group-hover:translate-x-12 group-hover:-translate-y-12 bg-indigo-800 right-1 -top-12"
-  ></div>
-  <div
-  class="absolute blur duration-500 group-hover:blur-none w-24 h-24 bg-sky-700 rounded-full group-hover:-translate-x-12"
-  ></div>
-  <div class="z-10 flex flex-col justify-evenly w-full h-full">
-    <span class="text-2xl font-bold">Website Trailer Movie</span>
-    <p class="my-4">
-      Website bertemakan trailer movie yang responsive dan elegant, memiliki beberapa fitur yaitu: fitur trending movies, Top Rating, Trending Tv, Search dan masih banyak lagi untuk melihat lebih detail..
-    </p>
-    <a href="bitrailer.netlify.app">
-      <button
-      class="btn-klik hover:bg-neutral-200 bg-neutral-50 rounded text-neutral-800 font-extrabold w-full p-3"
-      >
-      Klik disini
-    </button>
-  </a>
-</div> -->
   </div>
 </div>
     </div>
@@ -810,6 +790,36 @@ img {
 }
 }
 </style>
-<script>AOS.init()</script>
+<script>
+AOS.init()
+
+  function toggleDescription() {
+    var extraDescription = document.getElementById('extra-description');
+    var extraTekatekiDescription = document.getElementById('extra-tekateki-description');
+    var readMoreLink = document.getElementById('read-more-link');
+    var readMoreLinkTekaTeki = document.getElementById('read-more-link-teka-teki');
+
+    if (extraDescription.classList.contains('hidden')) {
+      extraDescription.classList.remove('hidden');
+      readMoreLink.textContent = 'Sembunyikan';
+    } else {
+      extraDescription.classList.add('hidden');
+      readMoreLink.textContent = 'Selengkapnya...';
+    }
+  }
+  function toggleDescriptionTekaTeki() {
+    var extraTekatekiDescription = document.getElementById('extra-tekateki-description');
+    var readMoreLinkTekaTeki = document.getElementById('read-more-link-teka-teki');
+
+    if (extraTekatekiDescription.classList.contains('hidden')) {
+      extraTekatekiDescription.classList.remove('hidden');
+      readMoreLinkTekaTeki.textContent = 'Sembunyikan';
+    } else {
+      extraTekatekiDescription.classList.add('hidden');
+      readMoreLinkTekaTeki.textContent = 'Selengkapnya...';
+    }
+
+  }
+</script>
 </body>
 </html>
