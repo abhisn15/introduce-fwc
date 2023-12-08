@@ -94,6 +94,8 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
 }
 
 body {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
   min-width: 320px;
   overflow-x: hidden;
@@ -455,6 +457,10 @@ img {
   }
   
   @media only screen and (max-width: 768px) {
+      html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
     .btn:before {
       content: "";
       position: absolute;
@@ -513,6 +519,10 @@ img {
 }
 }
   @media only screen and (max-width: 500px) {
+      html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
     .btn:before {
       content: "";
       position: absolute;
