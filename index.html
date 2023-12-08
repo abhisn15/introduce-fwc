@@ -5,7 +5,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="apple-touch-icon" href="./assets/logo.png" />
     <link rel="icon" href="/assets/favicon.ico" />
-    <link rel="stylesheet" href="style.css"/>
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -19,7 +18,7 @@
 		<title>FWC TECH</title>
 	</head>
 	<body>
-    <div class=" w-full">
+    <div class="w-full">
   <div class="eantialiased bg-gray-100 ">
   <div data-aos="fade-down" data-aos-duration="1000" class="fixed z-50 navbar w-full text-gray-700 bg-white">
     <div x-data="{ open: true }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
@@ -36,12 +35,12 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
 </svg>FWC TECH</a>
         <button data-aos="fade-left" data-aos-duration="1000" class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
           <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
-            <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
-            <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            <path x-show="open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            <path x-show="!open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
           </svg>
         </button>
       </div>
-      <nav data-aos="fade-left" data-aos-duration="1000" :class="{'flex': open, 'hidden': !open}" class="text-center flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+      <nav data-aos="fade-left" data-aos-duration="1000" :class="{'flex': !open, 'hidden': open}" class="text-center flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
         <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Home</a>
         <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#about">About</a>
         <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Contact</a>
@@ -61,7 +60,7 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
   <div class="sm:mr-0 items-center justify-center h-[100vh] container mx-auto px-4 md:flex md:items-center md:mr-20 mb-20">
     <div class="gambar-heading">
       <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="max-[768px]:flex max-[768px]:justify-center md:relative">
-      <img class="gambar-wir max-[768px]:object-cover md:hidden md:w-[559px] md:h-[733px] md:object-fill" src="assets/download.avif" alt="FWC TECH">
+      <img class="gambar-wir max-[768px]:object-cover md:hidden md:w-[559px] md:h-[733px]" src="assets/download.avif" alt="FWC TECH">
     </div>
       <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="heading-div relative z-20">
         <h1 class="heading">WE proviDE MAke Web And APlication Service</h1>
@@ -70,7 +69,7 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
       <button data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="btn mt-10">View Service >>></button>
     </div>
     <div id="img" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="gambar-desktop max-[768px]:right-0 max-[768px]:hidden md:relative md:right-52">
-      <img class="gambar-cuy max-[768px]:hidden md:w-[559px] md:h-[733px] md:object-fill" src="assets/download.avif" alt="FWC TECH">
+      <img class="gambar-cuy max-[768px]:hidden md:w-[559px] md:h-[733px]" src="assets/download.avif" alt="FWC TECH">
     </div>
   </div>
   <div id="about" class="custom-shape-divider-bottom-1701991002">
@@ -84,6 +83,431 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
     </div>
   </div>
 </div>
-<script src="index.js"></script>
+<style>
+  html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+.floating-image-container {
+  animation: floatAnimation 4s infinite, rotateAnimation 4s linear infinite;
+}
+
+.navbar {
+  filter: drop-shadow(-1px 4px 23.7px rgba(0, 0, 0, 0.25));
+}
+
+.heading {
+  font-family: 'Major Mono Display', monospace;
+  width: 756px;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.desc {
+  font-family: 'Poppins', sans-serif;
+  width: 452px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.btn {
+  padding: 1.1em 2em;
+  background: none;
+  border: 2px solid #fff;
+  font-size: 15px;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 52px;
+  background-color: #000000;
+  font-weight: bolder;
+  box-shadow: 0 2px 0 2px #000;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-color: #fcceb6;
+  top: 50%;
+  transform: skewX(30deg) translate(-150%, -50%);
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: #000000;
+  color: #fff;
+  box-shadow: 0 2px 0 2px #0d3b66;
+}
+
+.btn:hover::before {
+  transform: skewX(30deg) translate(150%, -50%);
+  transition-delay: 0.1s;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+.kotak {
+  border: 1px solid #000;
+  background: transparent;
+}
+
+.buble {
+  position: absolute;
+  top: -620px;
+  bottom: 0px;
+  right: 0;
+  left: 1300px;
+  width: 1400px;
+  height: 1002px;
+  transform: rotate(-20.784deg);
+  border-radius: 1002px;
+  background: #fcceb6;
+}
+
+.custom-shape-divider-bottom-1701991002 {
+  width: 100%;
+  overflow-x: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1701991002 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 104px;
+}
+
+.custom-shape-divider-bottom-1701991002 .shape-fill {
+  fill: #FFFFFF;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+img {
+  max-width: none;
+}
+
+.gambar-desktop {
+  z-index: 11;
+}
+
+@media only screen and (max-width: 1500px) {
+  .gambar-heading {
+    position: relative;
+    left: 100px;
+  }
+  .gambar-desktop {
+    position: relative;
+    right: 120px;
+  }
+.buble {
+    position: absolute;
+    top: -620px;
+    bottom: 0px;
+    right: 0;
+    left: 1000px;
+    width: 1400px;
+    height: 1002px;
+    transform: rotate(-20.784deg);
+    border-radius: 1002px;
+    background: #fcceb6;
+  }
+
+}
+@media only screen and (max-width: 1200px) {
+  .gambar-heading {
+    position: relative;
+    margin-left: 20px;
+    left: 140px;
+  }
+  
+  .gambar-desktop {
+    position: relative;
+    right: 120px;
+  }
+.buble {
+    position: absolute;
+    top: -620px;
+    bottom: 0px;
+    right: 0;
+    left: 700px;
+    width: 1400px;
+    height: 1002px;
+    transform: rotate(-20.784deg);
+    border-radius: 1002px;
+    background: #fcceb6;
+  }
+
+  .heading-div {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .heading {
+      font-family: 'Major Mono Display', monospace;
+      width: 600px;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .desc {
+      font-family: 'Poppins', sans-serif;
+      width: 300px;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+  }
+  @media only screen and (max-width: 1020px) {
+    .gambar-heading {
+      position: relative;
+      margin-left: 20px;
+      left: 140px;
+    }
+  
+    .gambar-desktop {
+      position: relative;
+      right: 120px;
+    }
+  .buble {
+      position: absolute;
+      top: -620px;
+      bottom: 0px;
+      right: 0;
+      left: 700px;
+      width: 1400px;
+      height: 1002px;
+      transform: rotate(-20.784deg);
+      border-radius: 1002px;
+      background: #fcceb6;
+    }
+  
+      .heading-div {
+        display: flex;
+        justify-content: center;
+      }
+  
+      .heading {
+        font-family: 'Major Mono Display', monospace;
+        width: 600px;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+  
+      .desc {
+        font-family: 'Poppins', sans-serif;
+        width: 300px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+  }
+  @media only screen and (max-width: 994px) {
+    .gambar-heading {
+      position: relative;
+      margin-left: 20px;
+      left: 160px;
+    }
+  
+    .gambar-desktop {
+      position: relative;
+      right: 160px;
+    }
+  .buble {
+      position: absolute;
+      top: -620px;
+      bottom: 0px;
+      right: 0;
+      left: 700px;
+      width: 1400px;
+      height: 1002px;
+      transform: rotate(-20.784deg);
+      border-radius: 1002px;
+      background: #fcceb6;
+    }
+  
+      .heading-div {
+        display: flex;
+        justify-content: center;
+      }
+  
+      .heading {
+        font-family: 'Major Mono Display', monospace;
+        width: 600px;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+  
+      .desc {
+        font-family: 'Poppins', sans-serif;
+        width: 300px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+  }
+  @media only screen and (max-width: 930px) {
+    .gambar-heading {
+      position: relative;
+      margin-left: 20px;
+      left: 160px;
+    }
+  
+    .gambar-desktop {
+      position: relative;
+      right: 160px;
+      max-width: 70%;
+    }
+
+    .gambar-cuy {
+      width: 400px;
+      height: 600px;
+    }
+
+  .buble {
+      position: absolute;
+      top: -620px;
+      bottom: 0px;
+      right: 0;
+      left: 700px;
+      width: 1400px;
+      height: 1002px;
+      transform: rotate(-20.784deg);
+      border-radius: 1002px;
+      background: #fcceb6;
+    }
+  
+      .heading-div {
+        display: flex;
+        justify-content: center;
+      }
+  
+      .heading {
+        font-family: 'Major Mono Display', monospace;
+        width: 600px;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+  
+      .desc {
+        font-family: 'Poppins', sans-serif;
+        width: 300px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .btn:before {
+      content: "";
+      position: absolute;
+      width: 160px;
+      height: 100%;
+      background-color: #fcceb6;
+      top: 50%;
+      transform: skewX(30deg) translate(-150%, -50%);
+      transition: all 0.5s;
+    }
+  .buble {
+    position: absolute;
+    top: -620px;
+    bottom: 0px;
+    right: 0;
+    left: 300px;
+    width: 1400px;
+    height: 1002px;
+    transform: rotate(-20.784deg);
+    border-radius: 1002px;
+    background: #fcceb6;
+  }
+
+  .gambar-heading {
+    display: flex;
+    position: relative;
+    z-index: 11;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+  }
+
+  .heading-div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .heading {
+  font-family: 'Major Mono Display', monospace;
+  width: max-content;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.desc {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  width: fit-content;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+}
+</style>
+<script>AOS.init()</script>
 </body>
 </html>
