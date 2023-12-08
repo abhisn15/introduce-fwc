@@ -47,8 +47,10 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
       </div>
       <nav data-aos="fade-left" data-aos-duration="1000" :class="{'flex': !open, 'hidden': open}" class="text-center flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
         <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#home">Home</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#service">Service</a>
         <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#about">About</a>
-        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Contact</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#contact">Contact</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#team">Team</a>
         <div @click.away="open = false" class="relative" x-data="{ open: true }">
           <div x-show="open" x-transition:enter="transition ease-out duration-500" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute 
           right-0 w-full md:max-w-screen-sm md:w-screen mt-2 origin-top-right">
@@ -60,8 +62,9 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
   </div>
 </div>
 </div>
-<div id="home" class="buble z-10"></div>
-<div class="w-full relative top-[110px] bg-slate-300">
+<!-- HOME -->
+<div class="buble z-10"></div>
+<div id="home" class="w-full relative top-[110px] bg-slate-300">
   <div class="sm:w-screen sm:mr-0 items-center justify-center h-[100vh] container mx-auto px-4 md:flex md:items-center md:mr-20 mb-20">
     <div class="gambar-heading">
       <div data-aos="fade-left" data-aos-duration="1000" class="max-[768px]:flex max-[768px]:justify-center md:relative">
@@ -70,24 +73,99 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
       <div data-aos="fade-right" data-aos-duration="1000" class="heading-div relative z-20">
         <h1 class="heading">WE proviDE MAke Web And APlication Service</h1>
       </div>
-      <p data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="desc relative pt-20">Kami menyediakan jasa pembuatan website statis, maupun dinamis, pembuatan usaha online dan sebagainya.</p>
+      <p data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="desc relative pt-20">Kami menyediakan jasa pembuatan website statis, maupun dinamis, untuk membantu dalam usaha online dan sebagainya.</p>
       <button data-aos="fade-up" data-aos-duration="1000" class="btn mt-10">View Service >>></button>
     </div>
     <div id="img" data-aos="fade-left" data-aos-duration="1000" class="gambar-desktop max-[768px]:right-0 max-[768px]:hidden md:relative md:right-52">
       <img class="gambar-cuy max-[768px]:hidden md:w-[559px] md:h-[733px]" src="assets/download.avif" alt="FWC TECH">
     </div>
   </div>
-  <div id="about" class="custom-shape-divider-bottom-1701991002">
+  <!-- SERVICE -->
+  <div id="service" class="custom-shape-divider-bottom-1701991002">
    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
      <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
    </svg>
  </div>
-  <div class="w-full absolute bg-white h-[100vh]">
-    <div class="mt-60 flex flex-col md:flex-row justify-center items-center">
-      asdas
+  <div class="service w-full bg-white">
+    <div data-aos="fade-up" data-aos-duration="1000" class="flex justify-center pt-10 pb-40">
+      <h1 class="title-service text-black text-center">Our Web & Mobile Application Development Services</h1>
+    </div>
+    <div class="flex justify-center">
+      <div data-aos="fade-up" data-aos-duration="1000" class="card mx-5">
+          <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:border-gray-700">
+          <img class="rounded-t-lg" src="assets/bitrailer.avif" width="101.2%" alt="Bitrailer">
+          <div class="p-5">
+            <h5 class="text-gray-900 font-bold md:text-2xl tracking-tight mb-2">Website Trailer Movie</h5>
+            <p class="md:font-normal text-sm text-gray-700 mb-3 dark:text-gray-400">Website bertemakan trailer movie yang responsive dan elegant, memiliki beberapa fitur yaitu: fitur trending movies, Top Rating, Trending Tv, Search dan masih banyak lagi untuk melihat lebih detail klik disini.</p>
+            <a target="_blank" href="https://bitrailer.netlify.app">
+                  <button class="btn-klik flex">
+                    Klik Disini
+                    <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                  </button>
+                </a>
+          </div>
+      </div>
+    </div>
+        <div data-aos="fade-up" data-aos-duration="1000" class="card mx-5">
+            <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:border-gray-700">
+            <img class="rounded-t-lg" src="assets/tekateki.avif" width="101.2%" alt="Bitrailer">
+            <div class="p-5">
+              <h5 class="text-gray-900 font-bold md:text-2xl tracking-tight mb-2">Website Trailer Movie</h5>
+              <p class="md:font-normal md:text-md text-sm text-gray-700 mb-3 dark:text-gray-400">Website bertemakan trailer movie yang responsive dan elegant, memiliki beberapa fitur yaitu: fitur trending movies, Top Rating, Trending Tv, Search dan masih banyak lagi untuk melihat lebih detail klik disini.</p>
+                <a target="_blank" href="https://rubrik-majalah-game.netlify.app">
+                  <button class="btn-klik flex">
+                    Klik Disini
+                    <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                  </button>
+                </a>
+          </div>
+        </div>
+      </div>
+  </div>
+      <!-- <div class="rounded-xl border border-black">
+        <img src="assets/bitrailer.avif" width="22%">
+        <div
+        class="w-96 h-64 duration-500 group overflow-hidden relative rounded bg-neutral-800 text-neutral-50 p-4 flex flex-col justify-evenly"
+        >
+  <div
+  class="absolute blur duration-500 group-hover:blur-none w-72 h-72 rounded-full group-hover:translate-x-12 group-hover:translate-y-12 bg-sky-900 right-1 -bottom-24"
+  ></div>
+  <div
+  class="absolute blur duration-500 group-hover:blur-none w-12 h-12 rounded-full group-hover:translate-x-12 group-hover:translate-y-2 bg-indigo-700 right-12 bottom-12"
+  ></div>
+  <div
+  class="absolute blur duration-500 group-hover:blur-none w-36 h-36 rounded-full group-hover:translate-x-12 group-hover:-translate-y-12 bg-indigo-800 right-1 -top-12"
+  ></div>
+  <div
+  class="absolute blur duration-500 group-hover:blur-none w-24 h-24 bg-sky-700 rounded-full group-hover:-translate-x-12"
+  ></div>
+  <div class="z-10 flex flex-col justify-evenly w-full h-full">
+    <span class="text-2xl font-bold">Website Trailer Movie</span>
+    <p class="my-4">
+      Website bertemakan trailer movie yang responsive dan elegant, memiliki beberapa fitur yaitu: fitur trending movies, Top Rating, Trending Tv, Search dan masih banyak lagi untuk melihat lebih detail..
+    </p>
+    <a href="bitrailer.netlify.app">
+      <button
+      class="btn-klik hover:bg-neutral-200 bg-neutral-50 rounded text-neutral-800 font-extrabold w-full p-3"
+      >
+      Klik disini
+    </button>
+  </a>
+</div> -->
+  </div>
+</div>
     </div>
   </div>
-  <div class="flex absolute items-end w-full min-h-screen bg-white">
+  <div class="custom-shape-divider-top-1702071625">
+    <svg data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+    </svg>
+</div>
+  <!-- ABOUT -->
+  <!-- CONTACT -->
+  <!-- TEAM -->
+  <!-- FOOTER -->
+  <div class="flex items-end w-full min-h-screen bg-white">
     <footer class="w-full text-gray-700 bg-gray-100 body-font">
         <div
             class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
@@ -134,13 +212,13 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
                     <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">About</h2>
                     <nav class="mb-10 list-none">
                         <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900">Company</a>
+                            <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-900">Company</a>
                         </li>
                         <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900">Careers</a>
+                            <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-900">Careers</a>
                         </li>
                         <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900">Blog</a>
+                            <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-900">Blog</a>
                         </li>
                     </nav>
                 </div>
@@ -148,13 +226,13 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
                     <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Support</h2>
                     <nav class="mb-10 list-none">
                         <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900">Contact Support</a>
+                            <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-900">Contact Support</a>
                         </li>
                         <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900">Help Resources</a>
+                            <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-900">Help Resources</a>
                         </li>
                         <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900">Release Updates</a>
+                            <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-900">Release Updates</a>
                         </li>
                     </nav>
                 </div>
@@ -163,35 +241,22 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
                     </h2>
                     <nav class="mb-10 list-none">
                         <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900">Terms &amp; Privacy</a>
+                            <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-900">Terms &amp; Privacy</a>
                         </li>
                         <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900">Pricing</a>
+                            <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-900">Pricing</a>
                         </li>
                         <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900">FAQ</a>
+                            <a href="#" class="text-gray-500 cursor-pointer hover:text-gray-900">FAQ</a>
                         </li>
                     </nav>
                 </div>
-                <div class="w-full px-4 lg:w-1/4 md:w-1/2">
-                    <h2 class="mb-3 text-sm font-medium tracking-widest text-gray-900 uppercase title-font">Contact</h2>
-                    <nav class="mb-10 list-none">
-                        <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900">Send a Message</a>
-                        </li>
-                        <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900">Request a Quote</a>
-                        </li>
-                        <li class="mt-3">
-                            <a class="text-gray-500 cursor-pointer hover:text-gray-900">0853-1481-8119</a>
-                        </li>
-                    </nav>
-                </div>
+                
             </div>
         </div>
         <div class="bg-gray-300">
             <div class="container px-5 py-4 mx-auto">
-                <p class="text-sm text-gray-700 capitalize xl:text-center">© Copyright - FWC TECH All rights reserved </p>
+                <p class="text-sm text-gray-700 capitalize xl:text-center">© Developed By : Abhi </p>
             </div>
         </div>
     </footer>
@@ -200,6 +265,7 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
 <style>
   html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -226,6 +292,14 @@ body {
   line-height: normal;
 }
 
+.title-service {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .desc {
   font-family: 'Poppins', sans-serif;
   width: 452px;
@@ -233,6 +307,20 @@ body {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+
+.custom-shape-divider-top-1702071625 {
+  fill: #FFFFFF;
+  background-color: #FFFFFF;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.service {
+  height: 100vh;
 }
 
 .btn {
@@ -274,6 +362,48 @@ body {
 }
 
 .btn:active {
+  transform: scale(0.9);
+}
+
+.btn-klik {
+  padding: 1.1em 2em;
+  background: none;
+  border: 2px solid #fff;
+  font-size: 12px;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  border-radius: 52px;
+  background-color: #000000;
+  font-weight: bolder;
+  box-shadow: 0 2px 0 2px #000;
+}
+
+.btn-klik:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-color: #fcceb6;
+  top: 50%;
+  transform: skewX(30deg) translate(-150%, -50%);
+  transition: all 0.5s;
+}
+
+.btn-klik:hover {
+  background-color: #000000;
+  color: #fff;
+  box-shadow: 0 2px 0 2px #0d3b66;
+}
+
+.btn-klik:hover::before {
+  transform: skewX(30deg) translate(150%, -50%);
+  transition-delay: 0.1s;
+}
+
+.btn-klik:active {
   transform: scale(0.9);
 }
 
