@@ -5,37 +5,49 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="apple-touch-icon" href="./assets/logo.png" />
     <link rel="icon" href="/assets/favicon.ico" />
-		<script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <link rel="stylesheet" href="style.css"/>
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-  <link rel="stylesheet" href="style.css"/>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Major+Mono+Display:wght@400;700&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Major+Mono+Display:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+		<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<title>FWC TECH</title>
 	</head>
 	<body>
     <div class=" w-full">
   <div class="eantialiased bg-gray-100 ">
-  <div class="fixed z-50 navbar w-full text-gray-700 bg-white">
+  <div data-aos="fade-down" data-aos-duration="1000" class="fixed z-50 navbar w-full text-gray-700 bg-white">
     <div x-data="{ open: true }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-      <div class="flex flex-row items-center justify-between p-4">
-        <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">FWC TECH</a>
-        <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+      <div data-aos="fade-right" data-aos-duration="1000" class="flex flex-row items-center justify-between p-4">
+        <a href="#" class="text-lg flex flex-row items-center font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"><svg class="floating-image-container" xmlns="http://www.w3.org/2000/svg" version="1.0" width="60pt" 
+height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid meet">
+<g transform="translate(0.000000,359.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+<path d="M1470 2533 l0 -88 -124 -67 c-68 -38 -128 -68 -132 -68 -5 0 -38 17 -74 38 l-65 38 -112 -183 c-62 -101 -113 -185 -113 -188 0 -2 31 -21 70 -42 l70 -38 0 -145 0 -145 -70 -44 c-38 -23 -70 -47 -70 -51 0 -15 222 -360 232 -360 5 0 39 15 76 34 l67 33 112 -71 113 -71 0 -82 0 -83 225 0 225 0 0 83 0 83 121 71 121 71 82 -28 82 -27 84 146 c46 80 92 160 102 177 l18 31 -70 48 -70 48 0 139 0 138 43 26 c23 14 54 34 69 43 l28 17 -101 182 c-55 100 -105 182 -110 182 -5 0 -41 -16 -79 -35 -38 -19 -74 -35 -80 -35 -6 0 -62 30 -125 66 l-115 67 0 88 0 89 -215 0 -215 0 0 -87z m370 -41 l0 -78 147 -86 147 -86 73 33 c53 25 74 30 81 22 5 -7 40 -68 77 -136 76 -138 77 -122 -9 -173 l-46 -28 0 -165 0 -165 60 -43 c33 -23 60 -46 60 -50 0 -7 -98 -184 -136 -244 l-14 -22 -72 25 -72 24 -131 -76 c-71 -43 -138 -82 -147 -88 -15 -9 -18 -25 -18 -83 l0 -73 -165 0 -165 0 0 73 0 72 -141 87 -140 88 -66 -30 c-36 -17 -67 -29 -68 -28 -2 2 -41 64 -88 138 l-86 135 65 40 64 40 0 175 0 175 -60 33 c-33 18 -60 35 -60 39 0 3 37 66 82 139 l81 134 62 -34 63 -34 156 86 156 87 0 78 0 77 155 0 155 0 0 -78z"/>
+<path d="M1597 2210 c-79 -14 -173 -64 -230 -123 -207 -213 -147 -558 120 -689 66 -32 72 -33 188 -33 115 0 123 1 186 32 167 82 270 274 241 449 -27 161 -128 287 -277 343 -61 23 -163 33 -228 21z m184 -66 c197 -57 312 -267 253 -464 -30 -102 -109 -190 -212 -238 -48 -23 -71 -27 -147 -27 -80 0 -97 3 -157 32 -81 38 -146 102 -184 180 -39 79 -45 203 -15 285 71 187 270 288 462 232z"/>
+<path d="M1646 1814 c-27 -114 -51 -215 -53 -225 -5 -16 1 -19 30 -19 25 0 37 5 41 18 10 37 96 412 96 422 0 5 -15 10 -33 10 l-33 0 -48 -206z"/>
+<path d="M1438 1827 l-36 -44 36 -42 c35 -40 40 -42 81 -39 l45 3 -32 36 c-18 20 -32 41 -32 46 0 5 14 22 30 38 17 16 30 32 30 37 0 4 -19 8 -43 8 -38 0 -47 -5 -79 -43z"/>
+<path d="M1790 1862 c0 -5 14 -21 30 -37 17 -16 30 -33 30 -38 0 -5 -14 -26 -32 -46 l-32 -36 45 -3 c41 -3 46 -1 81 39 l36 42 -36 44 c-32 38 -41 43 -79 43 -24 0 -43 -4 -43 -8z"/>
+</g>
+</svg>FWC TECH</a>
+        <button data-aos="fade-left" data-aos-duration="1000" class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
           <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
             <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
             <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
           </svg>
         </button>
       </div>
-      <nav :class="{'flex': open, 'hidden': !open}" class="text-center flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+      <nav data-aos="fade-left" data-aos-duration="1000" :class="{'flex': open, 'hidden': !open}" class="text-center flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
         <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Home</a>
-        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">About</a>
+        <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#about">About</a>
         <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Contact</a>
         <div @click.away="open = false" class="relative" x-data="{ open: true }">
-          <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full md:max-w-screen-sm md:w-screen mt-2 origin-top-right">
+          <div x-show="open" x-transition:enter="transition ease-out duration-500" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute 
+          right-0 w-full md:max-w-screen-sm md:w-screen mt-2 origin-top-right">
             </div>
           </div>
         </div>    
@@ -44,33 +56,34 @@
   </div>
 </div>
 </div>
-<div class="buble flex sm:hidden md-md:hidden lg:block"></div>
-<div class="bg-slate-300">
-  <div class="w-full sm:mr-0 lg:flex items-center justify-center h-[100vh] container mx-auto px-4 lg:flex lg:items-center lg:mr-20 mb-20">
-    <div class="">
-      <div class="sm:right-0 lg:relative lg:right-52">
-      <img class="md:object-cover lg:hidden lg:w-[559px] lg:h-[733px] lg:object-fill" src="assets/download.png" alt="FWC TECH">
+<div id="#" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="buble z-10"></div>
+<div class="w-full relative top-[110px] bg-slate-300">
+  <div class="sm:mr-0 items-center justify-center h-[100vh] container mx-auto px-4 md:flex md:items-center md:mr-20 mb-20">
+    <div class="gambar-heading">
+      <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="max-[768px]:flex max-[768px]:justify-center md:relative">
+      <img class="gambar-wir max-[768px]:object-cover md:hidden md:w-[559px] md:h-[733px] md:object-fill" src="assets/download.avif" alt="FWC TECH">
     </div>
-      <div>
-        <h1 class="heading relative z-10 md:font-md lg:text-xl">WE proviDE MAke Web And APlication Service</h1>
+      <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="heading-div relative z-20">
+        <h1 class="heading">WE proviDE MAke Web And APlication Service</h1>
       </div>
-      <p class="desc relative z-10 pt-20">Kami menyediakan jasa pembuatan website statis, maupun dinamis, pembuatan usaha online dan sebagainya.</p>
-      <button class="btn mt-10">View Service >>></button>
+      <p data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="desc relative pt-20">Kami menyediakan jasa pembuatan website statis, maupun dinamis, pembuatan usaha online dan sebagainya.</p>
+      <button data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="btn mt-10">View Service >>></button>
     </div>
-    <div class="max-[1000px]:hidden lg:relative lg:right-52">
-      <img class="max-[1000px]:hidden lg:w-[559px] lg:h-[733px] lg:object-fill" src="assets/download.png" alt="FWC TECH">
+    <div id="img" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="gambar-desktop max-[768px]:right-0 max-[768px]:hidden md:relative md:right-52">
+      <img class="gambar-cuy max-[768px]:hidden md:w-[559px] md:h-[733px] md:object-fill" src="assets/download.avif" alt="FWC TECH">
     </div>
   </div>
-  <div class="custom-shape-divider-bottom-1701991002">
+  <div id="about" class="custom-shape-divider-bottom-1701991002">
    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
      <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
    </svg>
  </div>
   <div class="w-full absolute bg-white h-[100vh]">
-    <h1>
-      dsa
-    </h1>
+    <div class="mt-60 flex flex-col md:flex-row justify-center items-center">
+      asdas
+    </div>
   </div>
 </div>
+<script src="index.js"></script>
 </body>
 </html>

@@ -1,10 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
+  min-width: 320px;
   overflow-x: hidden;
 }
 
 .floating-image-container {
-  position: absolute;
   animation: floatAnimation 4s infinite, rotateAnimation 4s linear infinite;
 }
 
@@ -130,4 +134,290 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+
+img {
+  max-width: none;
+}
+
+.gambar-desktop {
+  z-index: 11;
+}
+
+@media only screen and (max-width: 1500px) {
+  .gambar-heading {
+    position: relative;
+    left: 100px;
+  }
+  .gambar-desktop {
+    position: relative;
+    right: 120px;
+  }
+.buble {
+    position: absolute;
+    top: -620px;
+    bottom: 0px;
+    right: 0;
+    left: 1000px;
+    width: 1400px;
+    height: 1002px;
+    transform: rotate(-20.784deg);
+    border-radius: 1002px;
+    background: #fcceb6;
+  }
+
+}
+@media only screen and (max-width: 1200px) {
+  .gambar-heading {
+    position: relative;
+    margin-left: 20px;
+    left: 140px;
+  }
+  
+  .gambar-desktop {
+    position: relative;
+    right: 120px;
+  }
+.buble {
+    position: absolute;
+    top: -620px;
+    bottom: 0px;
+    right: 0;
+    left: 700px;
+    width: 1400px;
+    height: 1002px;
+    transform: rotate(-20.784deg);
+    border-radius: 1002px;
+    background: #fcceb6;
+  }
+
+  .heading-div {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .heading {
+      font-family: 'Major Mono Display', monospace;
+      width: 600px;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .desc {
+      font-family: 'Poppins', sans-serif;
+      width: 300px;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+  }
+  @media only screen and (max-width: 1020px) {
+    .gambar-heading {
+      position: relative;
+      margin-left: 20px;
+      left: 140px;
+    }
+  
+    .gambar-desktop {
+      position: relative;
+      right: 120px;
+    }
+  .buble {
+      position: absolute;
+      top: -620px;
+      bottom: 0px;
+      right: 0;
+      left: 700px;
+      width: 1400px;
+      height: 1002px;
+      transform: rotate(-20.784deg);
+      border-radius: 1002px;
+      background: #fcceb6;
+    }
+  
+      .heading-div {
+        display: flex;
+        justify-content: center;
+      }
+  
+      .heading {
+        font-family: 'Major Mono Display', monospace;
+        width: 600px;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+  
+      .desc {
+        font-family: 'Poppins', sans-serif;
+        width: 300px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+  }
+  @media only screen and (max-width: 994px) {
+    .gambar-heading {
+      position: relative;
+      margin-left: 20px;
+      left: 160px;
+    }
+  
+    .gambar-desktop {
+      position: relative;
+      right: 160px;
+    }
+  .buble {
+      position: absolute;
+      top: -620px;
+      bottom: 0px;
+      right: 0;
+      left: 700px;
+      width: 1400px;
+      height: 1002px;
+      transform: rotate(-20.784deg);
+      border-radius: 1002px;
+      background: #fcceb6;
+    }
+  
+      .heading-div {
+        display: flex;
+        justify-content: center;
+      }
+  
+      .heading {
+        font-family: 'Major Mono Display', monospace;
+        width: 600px;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+  
+      .desc {
+        font-family: 'Poppins', sans-serif;
+        width: 300px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+  }
+  @media only screen and (max-width: 930px) {
+    .gambar-heading {
+      position: relative;
+      margin-left: 20px;
+      left: 160px;
+    }
+  
+    .gambar-desktop {
+      position: relative;
+      right: 160px;
+      max-width: 70%;
+    }
+
+    .gambar-cuy {
+      width: 400px;
+      height: 600px;
+    }
+
+  .buble {
+      position: absolute;
+      top: -620px;
+      bottom: 0px;
+      right: 0;
+      left: 700px;
+      width: 1400px;
+      height: 1002px;
+      transform: rotate(-20.784deg);
+      border-radius: 1002px;
+      background: #fcceb6;
+    }
+  
+      .heading-div {
+        display: flex;
+        justify-content: center;
+      }
+  
+      .heading {
+        font-family: 'Major Mono Display', monospace;
+        width: 600px;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+  
+      .desc {
+        font-family: 'Poppins', sans-serif;
+        width: 300px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .btn:before {
+      content: "";
+      position: absolute;
+      width: 160px;
+      height: 100%;
+      background-color: #fcceb6;
+      top: 50%;
+      transform: skewX(30deg) translate(-150%, -50%);
+      transition: all 0.5s;
+    }
+  .buble {
+    position: absolute;
+    top: -620px;
+    bottom: 0px;
+    right: 0;
+    left: 300px;
+    width: 1400px;
+    height: 1002px;
+    transform: rotate(-20.784deg);
+    border-radius: 1002px;
+    background: #fcceb6;
+  }
+
+  .gambar-heading {
+    display: flex;
+    position: relative;
+    z-index: 11;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+  }
+
+  .heading-div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .heading {
+  font-family: 'Major Mono Display', monospace;
+  width: max-content;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.desc {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  width: fit-content;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
 }
