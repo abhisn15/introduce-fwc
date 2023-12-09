@@ -17,6 +17,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Major+Mono+Display:wght@400;700&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 		<script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -65,7 +66,7 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
 <!-- HOME -->
 <div class="buble z-10"></div>
 <div id="home" class="w-full relative top-[110px] bg-slate-300">
-  <div class="sm:w-screen max-[500px]:relative max-[500px]:right-2 sm:mr-0 items-center justify-center h-[100vh] container mx-auto px-4 md:flex md:items-center md:mr-20 mb-20">
+  <div class="sm:w-screen max-[768px]:relative max-[768px]:right-10 max-[695px]:right-6 max-[670px]:right-4 max-[600px]:right-2 sm:mr-0 items-center justify-center h-[100vh] container mx-auto px-4 md:flex md:items-center md:mr-20 mb-20">
     <div class="gambar-heading">
       <div data-aos="fade-left" data-aos-duration="1000" class="max-[768px]:flex max-[768px]:justify-center md:relative">
       <img class="gambar-wir max-[768px]:object-cover md:hidden md:w-[559px] md:h-[733px]" src="assets/download.avif" alt="FWC TECH">
@@ -74,7 +75,9 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
         <h1 class="heading">WE proviDE MAke Web And APlication Service</h1>
       </div>
       <p data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="desc relative pt-20">Kami menyediakan jasa pembuatan website statis, maupun dinamis, untuk membantu dalam usaha online dan sebagainya.</p>
-      <button data-aos="fade-up" data-aos-duration="1000" class="btn mt-10">View Service >>></button>
+        <a href="#service">
+          <button data-aos="fade-up" data-aos-duration="1000" class="btn max-[768px]:w-full mt-10">View Service >>></button>
+        </a>
     </div>
     <div id="img" data-aos="fade-left" data-aos-duration="1000" class="gambar-desktop max-[768px]:right-0 max-[768px]:hidden md:relative md:right-52">
       <img class="gambar-cuy max-[768px]:hidden md:w-[559px] md:h-[733px]" src="assets/download.avif" alt="FWC TECH">
@@ -86,61 +89,83 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
      <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
    </svg>
  </div>
-  <div class="service w-full bg-white">
+  <div class="service w-full bg-white mb-40">
     <div data-aos="fade-up" data-aos-duration="1000" class="flex justify-center pt-10 pb-40">
       <h1 class="title-service text-black text-center">Our Web & Mobile Application Development Services</h1>
     </div>
-    <div class="flex flex-row justify-center items-center">
-      <div data-aos="fade-up" data-aos-duration="1000" class="card mx-5">
-          <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:border-gray-700">
-          <img class="rounded-t-lg" src="assets/bitrailer.avif" width="101.2%" alt="Bitrailer">
-          <div class="p-5">
-            <h5 class="text-gray-900 font-bold md:text-2xl tracking-tight mb-2">Website Trailer Movie</h5>
-    <p id="movie-description" class="md:font-normal text-sm text-gray-700 mb-3 dark:text-gray-400">
-    Website bertemakan trailer movie yang responsive dan elegant, memiliki beberapa fitur yaitu: fitur trending movies, Top Rating,
-      <span id="extra-description" class="hidden">
-      Trending Tv, Search dan masih banyak lagi untuk melihat lebih detail klik disini.
-      </span>
-      <a id="read-more-link" class="text-blue-600 underline cursor-pointer" onclick="toggleDescription()">Selengkapnya...</a>
-    </p>
-            <a target="_blank" href="https://bitrailer.netlify.app">
-                  <button class="btn-klik flex">
-                    Klik Disini
-                    <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                  </button>
-                </a>
-          </div>
-      </div>
-    </div>
-        <div data-aos="fade-up" data-aos-duration="1000" class="card mx-5">
-            <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:border-gray-700">
-            <img class="rounded-t-lg" src="assets/tekateki.avif" width="101.2%" alt="Bitrailer">
-            <div class="p-5">
-              <h5 class="text-gray-900 font-bold md:text-2xl tracking-tight mb-2">Website Game Teka-Teki</h5>
-              <p id="tekateki-description" class="md:font-normal md:text-md text-sm text-gray-700 mb-3 dark:text-gray-400">Website bertemakan game teka-teki yang responsif dengan menggunakan barcode untuk melihat
-                <span id="extra-tekateki-description" class="hidden">pengguna handphone serta tampilan ketika jawaban selesai,  lebih hasilnya klik disini.</span>
-                <a id="read-more-link-teka-teki" class="text-blue-600 underline cursor-pointer" onclick="toggleDescriptionTekaTeki()">Selengkapnya...</a>
-              </p>
-                <a target="_blank" href="https://rubrik-majalah-game.netlify.app">
-                  <button class="btn-klik flex">
-                    Klik Disini
-                    <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                  </button>
-                </a>
+    <div class="carousel"
+    data-flickity='{ "freeScroll": true }'>
+    <div data-aos="fade-right" data-aos-duration="4000" class="card mx-5">
+              <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:border-gray-700">
+              <img class="rounded-t-lg" src="assets/bitrailer.avif" width="101.2%" alt="Bitrailer">
+              <div class="p-5">
+                <h5 class="text-gray-900 font-bold md:text-2xl tracking-tight mb-2">Website Trailer Movie</h5>
+        <p id="movie-description" class="md:font-normal text-sm text-gray-700 mb-3 dark:text-gray-400">
+        Website bertemakan trailer movie yang responsive dan elegant, memiliki beberapa fitur yaitu: fitur trending movies, Top Rating,
+          <span id="extra-description" class="hidden">
+          Trending Tv, Search dan masih banyak lagi untuk melihat lebih detail klik disini.
+          </span>
+          <a id="read-more-link" class="text-blue-600 underline cursor-pointer" onclick="toggleDescription()">Selengkapnya...</a>
+        </p>
+                <a target="_blank" href="https://bitrailer.netlify.app">
+                      <button class="btn-klik flex">
+                        Klik Disini
+                        <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                      </button>
+                    </a>
+              </div>
           </div>
         </div>
+      <div data-aos="fade-left" data-aos-duration="500" class="card mx-5">
+        <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:border-gray-700">
+                <img class="rounded-t-lg" src="assets/tekateki.avif" width="101.2%" alt="Teka-Teki">
+                <div class="p-5">
+                  <h5 class="text-gray-900 font-bold md:text-2xl tracking-tight mb-2">Website Game Teka-Teki</h5>
+                  <p id="tekateki-description" class="md:font-normal md:text-md text-sm text-gray-700 mb-3 dark:text-gray-400">Website bertemakan game teka-teki yang responsif dengan menggunakan barcode untuk melihat
+                    <span id="extra-tekateki-description" class="hidden">pengguna handphone serta tampilan ketika jawaban selesai,  ingin lebih tau hasilnya? klik disini.</span>
+                    <a id="read-more-link-teka-teki" class="text-blue-600 underline cursor-pointer" onclick="toggleDescriptionTekaTeki()">Selengkapnya...</a>
+                  </p>
+                    <a target="_blank" href="https://rubrik-majalah-game.netlify.app">
+                      <button class="btn-klik flex">
+                        Klik Disini
+                        <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                      </button>
+                    </a>
+                  </div>
+                  </div>
+                  </div>
+      <div data-aos="fade-left" data-aos-duration="500" class="card mx-5">
+        <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm dark:border-gray-700">
+                <img class="rounded-t-lg" src="assets/voting.avif" width="101.2%" alt="Voting">
+                <div class="p-5">
+                  <h5 class="text-gray-900 font-bold md:text-2xl tracking-tight mb-2">Website Voting</h5>
+                  <p id="voting-description" class="md:font-normal md:text-md text-sm text-gray-700 mb-3 dark:text-gray-400">Website dinamis yang bertemakan voting dengan desain yang responsif dan hasil suara yang realtime
+                    <span id="extra-voting-description" class="hidden">serta tampilan yang berbeda antara admin dan pengguna,  ingin lebih tau hasilnya? klik disini.</span>
+                    <a id="read-more-link-voting" class="text-blue-600 underline cursor-pointer" onclick="toggleDescriptionVote()">Selengkapnya...</a>
+                  </p>
+                    <a target="_blank" href="https://rubrik-majalah-game.netlify.app">
+                      <button class="btn-klik flex">
+                        Klik Disini
+                        <svg class="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                      </button>
+                    </a>
+                  </div>
+                  </div>
+                  </div>
+                </div>
+    </div>
+    </div>
       </div>
-  </div>
-  </div>
-</div>
     </div>
   </div>
-  <div class="custom-shape-divider-top-1702071625">
+</div>
+<div class="custom-shape-divider-top-1702071625 bg-amber-400">
     <svg data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
     </svg>
 </div>
   <!-- ABOUT -->
+  <div id="about" class="h-screen bg-amber-400"></div>
   <!-- CONTACT -->
   <!-- TEAM -->
   <!-- FOOTER -->
@@ -271,6 +296,45 @@ body {
   line-height: normal;
 }
 
+::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #fcceb6;
+}
+
+.carousel {
+  background: #eeeeee00;
+}
+
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.flickity-viewport {
+  height: 500px !important;
+}
+
 .title-service {
   font-family: 'Major Mono Display', monospace;
   font-size: 48px;
@@ -290,7 +354,6 @@ body {
 
 .custom-shape-divider-top-1702071625 {
   fill: #FFFFFF;
-  background-color: #FFFFFF;
     top: 0;
     left: 0;
     width: 100%;
@@ -709,6 +772,12 @@ img {
     justify-content: center;
     left: 0;
   }
+  
+    .btn-klik {
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+}
 
   .heading-div {
     display: flex;
@@ -789,6 +858,7 @@ img {
 }
 }
 </style>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script>
 AOS.init()
 
@@ -816,6 +886,18 @@ AOS.init()
     } else {
       extraTekatekiDescription.classList.add('hidden');
       readMoreLinkTekaTeki.textContent = 'Selengkapnya...';
+    }
+  }
+  function toggleDescriptionVote() {
+    var extraVoteDescription = document.getElementById('extra-voting-description');
+    var readMoreLinkVote = document.getElementById('read-more-link-voting');
+
+    if (extraVoteDescription.classList.contains('hidden')) {
+      extraVoteDescription.classList.remove('hidden');
+      readMoreLinkVote.textContent = 'Sembunyikan';
+    } else {
+      extraVoteDescription.classList.add('hidden');
+      readMoreLinkVote.textContent = 'Selengkapnya...';
     }
 
   }
