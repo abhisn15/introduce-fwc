@@ -65,10 +65,10 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
   <div class="sm:w-screen max-[768px]:relative max-[768px]:right-10 max-[695px]:right-6 max-[670px]:right-4 max-[600px]:right-2 sm:mr-0 items-center justify-center h-[100vh] container mx-auto px-4 md:flex md:items-center md:mr-20 mb-20">
     <div class="gambar-heading">
       <div data-aos="fade-left" data-aos-duration="1000" class="max-[768px]:flex max-[768px]:justify-center md:relative">
-      <img class="gambar-wir max-[768px]:object-cover md:hidden md:w-[559px] md:h-[733px]" src="assets/download.avif" alt="FWC TECH">
+      <img class="gambar-wir max-[768px]:object-cover max-[768px]:flex max-[9999px]:hidden md:w-[559px] md:h-[733px]" src="assets/download.avif" alt="FWC TECH">
     </div>
       <div data-aos="fade-right" data-aos-duration="1000" class="heading-div relative z-20">
-        <h1 class="heading">WE proviDE MAke Web And APlication Service</h1>
+        <h1 class="heading ">WE proviDE MAke Web And APlication Service</h1>
       </div>
       <p data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="desc relative pt-20">Kami menyediakan jasa pembuatan website statis, maupun dinamis, untuk membantu dalam usaha online dan sebagainya.</p>
         <a href="#service">
@@ -353,7 +353,6 @@ body {
   background: #eeeeee00;
 }
 
-
 /* cell number */
 .carousel-cell:before {
   display: block;
@@ -497,15 +496,14 @@ p {
 }
 
 .buble {
+  overflow-x: hidden;
   position: absolute;
-  top: -620px;
-  bottom: 0px;
-  right: 0;
-  left: 1300px;
-  width: 1400px;
-  height: 1002px;
-  transform: rotate(-20.784deg);
-  border-radius: 1002px;
+  top: -10vw;
+  right: -10vw;
+  width: 800px; 
+  height: 800px;
+
+  border-radius: 50%; 
   background: #fcceb6;
 }
 
@@ -569,17 +567,16 @@ img {
     right: 120px;
   }
 .buble {
-    position: absolute;
-    top: -620px;
-    bottom: 0px;
-    right: 0;
-    left: 1000px;
-    width: 1400px;
-    height: 1002px;
-    transform: rotate(-20.784deg);
-    border-radius: 1002px;
-    background: #fcceb6;
-  }
+  overflow-x: hidden;
+  position: absolute;
+  top: -10vw;
+  right: -10vw;
+  width: 800px; 
+  height: 800px;
+
+  border-radius: 50%; 
+  background: #fcceb6;
+}
 
 }
 @media only screen and (max-width: 1200px) {
@@ -594,17 +591,16 @@ img {
     right: 120px;
   }
 .buble {
-    position: absolute;
-    top: -620px;
-    bottom: 0px;
-    right: 0;
-    left: 700px;
-    width: 1400px;
-    height: 1002px;
-    transform: rotate(-20.784deg);
-    border-radius: 1002px;
-    background: #fcceb6;
-  }
+  overflow-x: hidden;
+  position: absolute;
+  top: -10vw;
+  right: -10vw;
+  width: 800px; 
+  height: 800px;
+
+  border-radius: 50%; 
+  background: #fcceb6;
+}
 
   .heading-div {
       display: flex;
@@ -640,18 +636,17 @@ img {
       position: relative;
       right: 120px;
     }
-  .buble {
-      position: absolute;
-      top: -620px;
-      bottom: 0px;
-      right: 0;
-      left: 700px;
-      width: 1400px;
-      height: 1002px;
-      transform: rotate(-20.784deg);
-      border-radius: 1002px;
-      background: #fcceb6;
-    }
+.buble {
+  overflow-x: hidden;
+  position: absolute;
+  top: -10vw;
+  right: -10vw;
+  width: 500px; 
+  height: 500px;
+
+  border-radius: 50%; 
+  background: #fcceb6;
+}
   
       .heading-div {
         display: flex;
@@ -686,18 +681,6 @@ img {
     .gambar-desktop {
       position: relative;
       right: 160px;
-    }
-  .buble {
-      position: absolute;
-      top: -620px;
-      bottom: 0px;
-      right: 0;
-      left: 700px;
-      width: 1400px;
-      height: 1002px;
-      transform: rotate(-20.784deg);
-      border-radius: 1002px;
-      background: #fcceb6;
     }
   
       .heading-div {
@@ -740,19 +723,6 @@ img {
       width: 400px;
       height: 600px;
     }
-
-  .buble {
-      position: absolute;
-      top: -620px;
-      bottom: 0px;
-      right: 0;
-      left: 700px;
-      width: 1400px;
-      height: 1002px;
-      transform: rotate(-20.784deg);
-      border-radius: 1002px;
-      background: #fcceb6;
-    }
   
       .heading-div {
         display: flex;
@@ -779,7 +749,7 @@ img {
   }
   
   @media only screen and (max-width: 768px) {
-      html {
+html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
@@ -794,18 +764,16 @@ img {
       transform: skewX(30deg) translate(-150%, -50%);
       transition: all 0.5s;
     }
-  .buble {
-    position: absolute;
-    top: -620px;
-    bottom: 0px;
-    right: 0;
-    left: 300px;
-    width: 1400px;
-    height: 1002px;
-    transform: rotate(-20.784deg);
-    border-radius: 1002px;
-    background: #fcceb6;
-  }
+
+.buble {
+  overflow: hidden;
+  position: absolute;
+  top: -10vw;
+  width: 400px;
+  height: 400px;
+  border-radius: 100%; 
+  background: #fcceb6;
+}
 
   .gambar-heading {
     display: flex;
@@ -815,12 +783,6 @@ img {
     justify-content: center;
     left: 0;
   }
-  
-    .btn-klik {
-    width: -webkit-fill-available;
-    display: flex;
-    justify-content: center;
-}
 
   .heading-div {
     display: flex;
@@ -848,57 +810,7 @@ img {
 }
 }
   @media only screen and (max-width: 500px) {
-      html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
-    .btn:before {
-      content: "";
-      position: absolute;
-      width: 160px;
-      height: 100%;
-      background-color: #fcceb6;
-      top: 50%;
-      transform: skewX(30deg) translate(-150%, -50%);
-      transition: all 0.5s;
-    }
-  .buble {
-    display: none;
-  }
-
-  .gambar-heading {
-    display: flex;
-    position: relative;
-    z-index: 11;
-    flex-direction: column;
-    justify-content: center;
-    left: 0;
-  }
-
-  .heading-div {
-    display: flex;
-    justify-content: center;
-  }
-
-  .heading {
-  font-family: 'Major Mono Display', monospace;
-  width: max-content;
-  text-align: center;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.desc {
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  width: fit-content;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-}
+     
 }
 </style>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
