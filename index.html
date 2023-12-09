@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
 		<link rel="apple-touch-icon" href="./assets/logo.png" />
     <link rel="icon" href="/assets/favicon.ico" />
     <link
@@ -19,8 +18,8 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<title>FWC TECH</title>
 	</head>
-	<body>
-    <div class="w-full">
+	<body class="overflow-hidden">
+    <div class="w-full ">
   <div class="eantialiased bg-gray-100 ">
   <div data-aos="fade-down" data-aos-duration="1000" class="fixed z-50 navbar w-full text-gray-700 bg-white">
     <div x-data="{ open: true }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
@@ -225,7 +224,7 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
 </div>
   <!-- ABOUT -->
   <div id="about" class="h-screen bg-amber-400 pt-20">
-    <div class="flex justify-center ">  
+    <div class="flex justify-center">  
       <h1 class="heading text-center">AbOUT uS</h1>
       <div>
       </div>
@@ -325,7 +324,7 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
         </div>
         <div class="bg-gray-300">
             <div class="container px-5 py-4 mx-auto">
-                <p class="text-sm text-gray-700 capitalize xl:text-center">© Developed By : Abhi </p>
+                <p class="text-sm text-gray-700 capitalize xl:text-center">© Developed By : FWC TECH </p>
             </div>
         </div>
     </footer>
@@ -521,13 +520,12 @@ p {
 }
 
 .buble {
-  overflow-x: hidden;
+  overflow: hidden;
   position: absolute;
   top: -10vw;
   right: -10vw;
   width: 800px; 
   height: 800px;
-
   border-radius: 50%; 
   background: #fcceb6;
 }
@@ -794,8 +792,9 @@ img {
   overflow: hidden;
   position: absolute;
   top: -10vw;
-  width: 400px;
-  height: 400px;
+  left: -200px;
+  width: 500px;
+  height: 500px;
   border-radius: 100%; 
   background: #fcceb6;
 }
