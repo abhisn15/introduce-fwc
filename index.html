@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Major+Mono+Display:wght@400;700&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -60,7 +61,7 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
 </div>
 <!-- HOME -->
 <div class="buble z-10"></div>
-<div id="home" class="w-full relative top-[110px] bg-slate-300">
+<div id="home" class="w-full relative pt-[90px]">
   <div class="sm:w-screen max-[768px]:relative max-[768px]:mb-40 max-[600px]:mb-20 max-[500px]:mb-0 max-[768px]:right-10 max-[695px]:right-6 max-[670px]:right-4 max-[600px]:right-2 sm:mr-0 items-center justify-center h-[100vh] container mx-auto px-4 md:flex md:items-center md:mr-20 mb-20">
     <div class="gambar-heading">
       <div data-aos="fade-left" data-aos-duration="1000" class="max-[768px]:flex max-[768px]:justify-center md:relative">
@@ -71,7 +72,7 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
       </div>
       <p data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="desc relative pt-20">Kami menyediakan jasa pembuatan website statis, maupun dinamis, untuk membantu dalam usaha online dan sebagainya.</p>
         <a href="#service">
-          <button data-aos="fade" data-aos-duration="1000" class="btn max-[768px]:w-full mt-10">View Service >>></button>
+          <button data-aos="fade-right" data-aos-duration="1000" class="btn max-[768px]:w-full mt-10">View Service >>></button>
         </a>
     </div>
     <div id="img" data-aos="fade-left" data-aos-duration="1000" class="gambar-desktop max-[768px]:right-0 max-[768px]:hidden md:relative md:right-52">
@@ -153,8 +154,8 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
                   <img class="rounded-t-lg" src="assets/undangan.avif" width="100%" alt="Voting">
                   <div class="p-5">
                     <h5 class="text-gray-900 font-bold max-[768px]:text-xl md:text-2xl tracking-tight mb-2">Website Undangan Online</h5>
-                    <p id="undangan-description" class="md:font-normal md:text-md text-sm text-gray-700 mb-3 dark:text-gray-400">Website bertemakan undangan dengan desain yang responsif dan berbgai macam fitur seperti adanya jadwal
-                      <span id="extra-undangan-description" class="hidden">dimulainya acara, dan absen untuk tamu undangan dan bisa dilihat pesannya secara realtime, ingin lebih tau hasilnya? klik disini.</span>
+                    <p id="undangan-description" class="md:font-normal md:text-md text-sm text-gray-700 mb-3 dark:text-gray-400">Website bertemakan undangan dengan desain yang responsif dan berbgai macam fitur seperti  
+                      <span id="extra-undangan-description" class="hidden">adanya jadwal dimulainya acara, dan absen untuk tamu undangan dan bisa dilihat pesannya secara realtime, ingin lebih tau hasilnya? klik disini.</span>
                       <a id="read-more-link-undangan" class="text-blue-600 underline cursor-pointer" onclick="toggleDescriptionUndangan()">Selengkapnya...</a>
                     </p>
                       <a target="_blank" href="https://rubrik-majalah-game.netlify.app">
@@ -217,24 +218,175 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
     </div>
   </div>
 </div>
-<div class="custom-shape-divider-top-1702071625 bg-amber-400">
+<div class="custom-shape-divider-top-1702071625 bg-yellow-300">
     <svg data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
     </svg>
 </div>
   <!-- ABOUT -->
-  <div id="about" class="h-screen bg-amber-400 pt-20">
-    <div class="flex justify-center">  
+  <div id="about" class="h-screen flex flex-col justify-center items-center bg-yellow-300">
+    <div data-aos="fade-left" data-aos-duration="500" class="flex flex-col justify-center items-center">  
       <h1 class="heading text-center">AbOUT uS</h1>
-      <div>
-      </div>
+    </div>
+        <div data-aos="fade-right" data-aos-duration="1000" class="text-center flex flex-col items-center mt-10">
+          <p class="w-[50%]">For Web Computer TECH adalah sebuah kelompok yang didirikan pada tanggal 12 September 2023. Kelompok ini memiliki fokus utama di bidang jasa pembuatan website dan aplikasi mobile. Sejak awal berdiri, kami telah berkomitmen untuk memberikan solusi teknologi informasi yang inovatif dan berkualitas tinggi kepada klien-klien kami. Kami berkomitmen untuk memberikan layanan terbaik kepada setiap klien kami dan membangun hubungan jangka panjang yang didasarkan pada kepercayaan dan kepuasan. Jika Anda mencari solusi teknologi informasi yang handal, For Web Computer TECH siap membantu mewujudkannya.</p>
+        </div>
+        </div>
+          </div>
     </div>
   </div>
+  <div class="custom-shape-divider-bottom-1702147770 bg-yellow-300">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>
   <!-- CONTACT -->
+  <div id="contact" class="h-[120vh] flex flex-col justify-center items-center">
+    <div class="max-[768px]:flex-col flex flex-row justify-center items-center w-full container mx-auto p-4 mt-20 gap-20">
+                    <div data-aos="fade-right" data-aos-duration="1000" class="">
+                      <img class="w-[100%]" src="https://dlh.kalselprov.go.id/web/wp-content/uploads/2021/07/Asset-4@4x-768x642.png" alt="Contact">
+                    </div>
+                    <div class="w-[400px]">
+                      <h1 data-aos="fade-left" data-aos-duration="500" class="contact max-[768px]:text-center  text-gray-900 font-bold md:text-3xl tracking-tight mb-8 max-[768px]:mt-5 max-[768px]:text-3xl">
+                        CoNtAcT uS
+                      </h1>
+                      <div class="flex justify-center">
+                        <p data-aos="fade-left" data-aos-duration="1000" class="max-[768px]:text-center max-[768px]:mx-4 max-[500px]:text-sm max-[390px]:w-[300px] max-[320px]:w-[250px]">Kami menyediakan layanan berbasis chat melalui platform Whatsapp, klik Mulai Chat dibawah ini.</p>
+                      </div>
+                        <div class="flex items-center max-[768px]:justify-center">
+                          <a target="_blank" href="https://wa.me/085314818119" class="">
+                            <button data-aos="fade-up" data-aos-duration='1000' class="btn-klik mt-4 flex flex-row items-center gap-2 justify-center max-[768px]:w-[400px] max-[458px]:w-[320px] max-[370px]:w-[280px] max-[320px]:w-[250px]">
+                            <img src="assets/whatsapp.svg" width="25px" alt="whatsapp">
+                            Mulai Chat
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+  </div>
+  <div class="custom-shape-divider-top-1702151271 svg">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>
   <!-- TEAM -->
+  <div id="team" class="max-[768px]:h-[300vh] max-[768px]:h-[180vh] max-[1152px]:h-[200vh] max-[1700px]:h-[150vh] max-[1152px]:pt-40 min-[1700px]:h-[100vh] flex flex-col justify-center items-center">
+    <div data-aos="fade-up" data-aos-duration="1000" class="burder border-b-4 pb-5 w-[300px]">
+      <div class="flex justify-center">
+        <h1 class="contact text-4xl text-center text-gray-200">Our TEaM</h1>
+      </div>
+    </div>
+    <div class="flex mt-10 flex-wrap justify-center">
+      <div data-aos="fade-up" data-aos-duration="1000" class="card">
+        <div class="circle">
+              <div class="imgBox top-[160px]">
+                  <img src="assets/abhi.png" alt="">
+              </div>
+          </div>
+          <div class="content">
+            <div class="flex flex-row items-center gap-2">
+              <a target="_blank" href="https://www.instagram.com/abhisn_gaming/">
+                <img src="https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584852.png" width="30" alt="instagram">
+                </a>
+              <a target="_blank" href="https://www.linkedin.com/in/abhi-surya-nugroho-60a06a286/">
+                <img src="https://cdn-icons-png.flaticon.com/256/174/174857.png" width="25" alt="instagram">
+              </a>
+              <a target="_blank" href="https://github.com/abhisn15">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="25" alt="instagram">
+              </a>
+            </div>
+              <h3>Abhi Surya Nugroho</h3>
+              <div class="textIcon">
+                  <p>CEO - Fullstack Developer</p>
+                  <a href="#">
+                      <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </a>
+              </div>
+            </div>
+          </div>
+      <div data-aos="fade-up" data-aos-duration="1000" class="card">
+          <div class="circle">
+              <div class="imgBox top-[60px]">
+                  <img class="" src="assets/afdhika.png" alt="Afdhika">
+              </div>
+          </div>
+          <div class="content">
+              <a target="_blank" href="https://www.instagram.com/afdhikasyahputra5/">
+                  <img  src="https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584852.png" width="30" alt="instagram">
+                </a>
+              <h3>Afdhika Dwi Saputra</h3>
+              <div class="textIcon">
+                  <p>COO - Desainer</p>
+                  <a href="#">
+                      <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="1000" class="card">
+          <div class="circle">
+            <div class="imgBox top-[40px]">
+                  <img src="assets/erlangga.png" alt="Erlangga">
+              </div>
+          </div>
+          <div class="content">
+              <a target="_blank" href="https://www.instagram.com/erlanggakurniawn/">
+                  <img  src="https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584852.png" width="30" alt="instagram">
+                </a>
+              <h3>Erlangga Kurniawan</h3>
+              <div class="textIcon">
+                <p>CMO - Manager</p>
+                  <a href="#">
+                      <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </a>
+              </div>
+            </div>
+          </div>
+      <div data-aos="fade-up" data-aos-duration="1000" class="card">
+          <div class="circle">
+            <div class="imgBox top-[180px]">
+                  <img src="assets/dewa.png" alt="Dewa">
+              </div>
+          </div>
+          <div class="content">
+              <a target="_blank" href="https://www.instagram.com/mdewa__/">
+                  <img  src="https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584852.png" width="30" alt="instagram">
+                </a>
+              <h3>Maha Dewa MM</h3>
+              <div class="textIcon">
+                <p>CTO - Backend Developer</p>
+                  <a href="#">
+                      <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </a>
+              </div>
+            </div>
+          </div>
+      <div data-aos="fade-up" data-aos-duration="1000" class="card">
+          <div class="circle">
+            <div class="imgBox top-[180px]">
+                  <img src="assets/dewa.png" alt="Sabrina">
+              </div>
+          </div>
+          <div class="content">
+              <a target="_blank" href="https://www.instagram.com/binaabeo/">
+                  <img  src="https://png.pngtree.com/png-clipart/20180626/ourmid/pngtree-instagram-icon-instagram-logo-png-image_3584852.png" width="30" alt="instagram">
+                </a>
+              <h3>Sabrina Mauliza Rea</h3>
+              <div class="textIcon">
+                <p>CMO - Desainer</p>
+                  <a href="#">
+                      <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </a>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+
+  
   <!-- FOOTER -->
   <div class="flex items-end w-full bg-white">
-    <footer class="w-full text-gray-700 bg-gray-100 body-font">
+    <footer class="w-full text-gray-700 bg-gray-100 body-font bg-white">
         <div
             class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
             <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
@@ -335,6 +487,109 @@ height="60pt" viewBox="0 0 339.000000 359.000000" preserveAspectRatio="xMidYMid 
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+.burder {
+  border-color: #fcceb6;
+}
+
+.card
+{
+   position: relative;
+   width: 340px;
+   height: 450px;
+   background: #fff;
+   overflow: hidden;
+   border-radius: 10px;
+   margin: 20px;
+}
+.card .circle
+{
+   position: absolute;
+   top: -190px;
+   left: 50%;
+   width: 500px;
+   height: 500px;
+   transform: translateX(-50%);
+   clip-path: circle();
+}
+.card .circle::before
+{
+   content: '';
+   position: absolute;
+   top: -8px;
+   left: -16px;
+   width: 100%;
+   height: 100%;
+   box-shadow: 0 0 0 20px #fcceb6;
+   border-radius: 50%;
+   z-index: 2;
+   pointer-events: none;
+}
+.circle .imgBox
+{
+   position: absolute;
+   left: 50%;
+   bottom: 0;
+   transform: translateX(-50%);
+   width: 340px;
+   height: 310px;
+}
+.imgBox img
+{
+   position: absolute;
+   left: 0;
+   object-fit: cover;
+   width: 100%;
+   transition: all 0.5s;
+}
+.imgBox img:hover
+{
+   transform: scale(1.2);
+}
+.card .content
+{
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 140px;
+   padding: 20px 30px;
+}
+
+.content h3
+{
+   font-size: 1.4em;
+   color: #333;
+   margin-top: 7px;
+   margin-bottom: 2px;
+}
+.content .textIcon
+{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+}
+.content .textIcon p
+{
+   color: #fcceb6;
+   font-weight: 400;
+}
+.content .textIcon .fa-arrow-right
+{
+   color: #fcceb6;
+}
+
+#home {
+  background-color: rgba(0, 255, 255, 0.212);
+}
+
+#team {
+  background-color: #FFA3A6;
+}
+
+.svg {
+ background-color: #FFA3A6;
+}
 
 body {
   overflow-x: hidden;
@@ -361,6 +616,10 @@ body {
   line-height: normal;
 }
 
+.contact {
+  font-family: 'Major Mono Display', monospace;
+}
+
 ::-webkit-scrollbar-track
 {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -379,6 +638,26 @@ body {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
   background-color: #fcceb6;
+}
+
+.custom-shape-divider-top-1702151271 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1702151271 svg {
+    position: relative;
+    display: block;
+    width: calc(123% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1702151271 .shape-fill {
+    fill: #FFFFFF;
 }
 
 .carousel {
@@ -406,6 +685,22 @@ body {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+
+.custom-shape-divider-top-1702151560 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1702151560 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
 }
 
 p {
@@ -578,6 +873,27 @@ img {
 
 .gambar-desktop {
   z-index: 11;
+}
+
+.custom-shape-divider-bottom-1702147770 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1702147770 svg {
+    position: relative;
+    display: block;
+    width: calc(123% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1702147770 .shape-fill {
+    fill: #FFFFFF;
 }
 
 @media only screen and (max-width: 1500px) {
